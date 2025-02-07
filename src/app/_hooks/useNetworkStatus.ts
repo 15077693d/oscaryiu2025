@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 
 export function useNetworkStatus() {
   // Use navigator.onLine if it's available (it won’t be during SSR).
-  const [isOnline, setIsOnline] = useState(
-    typeof navigator !== "undefined" ? navigator.onLine : true,
-  );
+  const [isOnline, setIsOnline] = useState(true);
 
   useEffect(() => {
     const updateOnlineStatus = () => setIsOnline(navigator.onLine);

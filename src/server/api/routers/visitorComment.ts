@@ -23,7 +23,7 @@ export const visitorCommentRouter = createTRPCRouter({
       };
     }),
 
-  create: protectedProcedure
+  create: publicProcedure
     .input(createVisitorCommentsSchema)
     .mutation(async ({ ctx, input }) => {
       await ctx.db.insert(visitorComments).values({
