@@ -6,4 +6,7 @@
     background-color: black;
     color: white;
   }
+  :root {
+    --radius: 0.5rem;
+  }
 }
