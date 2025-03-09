@@ -23,7 +23,7 @@ const experiences = [
   {
     company: "oscaryiu.com",
     title: "Wordpress Developer",
-    year: "2025",
+    year: "2023",
     logo: "/oscaryiu.png",
   },
   {
