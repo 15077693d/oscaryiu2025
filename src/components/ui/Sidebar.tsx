@@ -1,5 +1,12 @@
-import { Home, Search, Library, PlusSquare, Heart, Download } from "lucide-react"
-import { ScrollArea } from "@/components/ui/scroll-area"
+import {
+  Download,
+  Heart,
+  Home,
+  Library,
+  PlusSquare,
+  Search,
+} from "lucide-react";
+import { ScrollArea } from "~/components/ui/scroll-area";
 
 const playlists = [
   "My Playlist #1",
@@ -22,7 +29,7 @@ const playlists = [
   "My Playlist #18",
   "My Playlist #19",
   "My Playlist #20",
-]
+];
 
 export function Sidebar() {
   return (
@@ -32,19 +39,28 @@ export function Sidebar() {
         <nav>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="flex items-center space-x-2 hover:text-white">
+              <a
+                href="#"
+                className="flex items-center space-x-2 hover:text-white"
+              >
                 <Home size={24} />
                 <span>Home</span>
               </a>
             </li>
             <li>
-              <a href="#" className="flex items-center space-x-2 hover:text-white">
+              <a
+                href="#"
+                className="flex items-center space-x-2 hover:text-white"
+              >
                 <Search size={24} />
                 <span>Search</span>
               </a>
             </li>
             <li>
-              <a href="#" className="flex items-center space-x-2 hover:text-white">
+              <a
+                href="#"
+                className="flex items-center space-x-2 hover:text-white"
+              >
                 <Library size={24} />
                 <span>Your Library</span>
               </a>
@@ -85,6 +101,5 @@ export function Sidebar() {
         </button>
       </div>
     </div>
-  )
+  );
 }
-
