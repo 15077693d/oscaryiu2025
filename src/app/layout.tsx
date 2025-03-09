@@ -4,7 +4,7 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import { TRPCReactProvider } from "~/trpc/react";
-import NetworkRedirect from "./_components/networkRedirect";
+//import NetworkRedirect from "./_components/networkRedirect";
 
 export const metadata: Metadata = {
   title: "Hi! I'm Oscar!",
@@ -19,7 +19,8 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable}`}>
       <body>
         <TRPCReactProvider>
-          <ReactQueryDevtools initialIsOpen={false} /> <NetworkRedirect />
+          <ReactQueryDevtools initialIsOpen={false} />
+          {/* <NetworkRedirect /> */}
           {children}
         </TRPCReactProvider>
       </body>
