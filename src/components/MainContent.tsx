@@ -35,7 +35,7 @@ const experiences = [
     title: "Made in Hong Kong",
     year: "1996-now",
     logo: "/me.jpg",
-    url: "https://linkedin.com/in/oscaryiu",
+    url: "https://www.linkedin.com/in/15077693d/",
   },
 ];
 
