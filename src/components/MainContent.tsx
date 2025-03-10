@@ -51,12 +51,12 @@ export function MainContent() {
           className="w-32 h-32 md:w-52 md:h-52 shadow-lg mb-4 md:mb-0"
         />
         <div>
-          <p className="text-sm font-semibold">PLAYLIST</p>
+          <p className="text-sm font-semibold">BUILDER</p>
           <h1 className="text-3xl md:text-5xl font-bold mt-2 mb-2 md:mb-4">
-            I&apos;m a Builder!
+            I&apos;m Oscar!
           </h1>
           <p className="text-xs md:text-sm text-gray-300">
-            Created by Web development and learning building start up
+            Web development and building start up
           </p>
         </div>
       </div>
@@ -90,12 +90,12 @@ export function MainContent() {
               <td className="py-3">{index + 1}</td>
               <td className="py-3">
                 <div className="flex items-center">
-                  <Image
+                  <img
                     src={experience.logo}
                     width={40}
                     height={40}
                     alt={`${experience.company} logo`}
-                    className="mr-3 rounded-full object-cover"
+                    className="mr-3 w-10 h-10  object-cover"
                   />
                   <div>
                     <p className="text-white">{experience.company}</p>
@@ -118,12 +118,12 @@ export function MainContent() {
             onClick={() => window.open(experience.url, "_blank")}
           >
             <div className="mr-3 text-gray-400">{index + 1}</div>
-            <Image
+            <img
               src={experience.logo}
               width={40}
               height={40}
               alt={`${experience.company} logo`}
-              className="mr-3 rounded-full object-cover"
+              className="mr-3 w-10 h-10 object-cover"
             />
             <div className="flex-1">
               <p className="text-white text-sm">{experience.company}</p>

@@ -13,6 +13,7 @@ const skills = [
   "Dapp Development",
   "React",
   "TypeScript",
+  "html/css/js",
   "Fullstack Development in T3",
   "Nest.js (in progress...)",
 ];
