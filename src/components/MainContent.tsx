@@ -7,30 +7,35 @@ const experiences = [
     title: "Builder",
     year: "2025",
     logo: "/staffecho.png",
+    url: "https://staffecho.com",
   },
   {
     company: "Synfutures",
     title: "Frontend Developer",
     year: "2024-2025",
     logo: "/synfuture.png",
+    url: "https://synfutures.com",
   },
   {
     company: "Wombat Finance",
     title: "Web3 Developer",
     year: "2021-2024",
     logo: "/wombat.png",
+    url: "https://wombat.finance",
   },
   {
     company: "oscaryiu.com",
     title: "Wordpress Developer",
-    year: "2023",
+    year: "2025",
     logo: "/oscaryiu.png",
+    url: "https://oscaryiu.com",
   },
   {
     company: "Oscar Yiu",
     title: "Made in Hong Kong",
     year: "1996-now",
     logo: "/me.jpg",
+    url: "https://linkedin.com/in/oscaryiu",
   },
 ];
 
@@ -51,7 +56,7 @@ export function MainContent() {
             I&apos;m a Builder!
           </h1>
           <p className="text-xs md:text-sm text-gray-300">
-            Web development and building start up
+            Created by Web development and learning building start up
           </p>
         </div>
       </div>
@@ -77,16 +82,20 @@ export function MainContent() {
         </thead>
         <tbody>
           {experiences.map((experience, index) => (
-            <tr key={index} className="hover:bg-white/10">
+            <tr
+              key={index}
+              className="hover:bg-white/10 cursor-pointer transition-colors"
+              onClick={() => window.open(experience.url, "_blank")}
+            >
               <td className="py-3">{index + 1}</td>
               <td className="py-3">
                 <div className="flex items-center">
-                  <img
+                  <Image
                     src={experience.logo}
                     width={40}
                     height={40}
                     alt={`${experience.company} logo`}
-                    className="mr-3   w-10 h-10 object-cover "
+                    className="mr-3 rounded-full object-cover"
                   />
                   <div>
                     <p className="text-white">{experience.company}</p>
@@ -105,15 +114,16 @@ export function MainContent() {
         {experiences.map((experience, index) => (
           <div
             key={index}
-            className="flex items-center py-3 border-b border-gray-800"
+            className="flex items-center py-3 border-b border-gray-800 hover:bg-white/10 cursor-pointer transition-colors"
+            onClick={() => window.open(experience.url, "_blank")}
           >
             <div className="mr-3 text-gray-400">{index + 1}</div>
-            <img
+            <Image
               src={experience.logo}
               width={40}
               height={40}
               alt={`${experience.company} logo`}
-              className="mr-3  w-10 h-10 object-cover"
+              className="mr-3 rounded-full object-cover"
             />
             <div className="flex-1">
               <p className="text-white text-sm">{experience.company}</p>
